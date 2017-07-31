@@ -6,7 +6,7 @@ EAPI="6"
 DESCRIPTION="Trust anchors endorsed by EGI.eu"
 HOMEPAGE="https://wiki.egi.eu/wiki/EGI_IGTF_Release"
 
-# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.84/${PV}/'
+# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.85/${PV}/'
 SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AEGIS-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_ANSPGrid-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_ASGCCA-2007-${PV}.tar.gz
