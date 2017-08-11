@@ -18,6 +18,7 @@ IUSE="doc +clients server"
 
 DEPEND=">=dev-libs/openssl-1.0.1"
 RDEPEND="${DEPEND}
+	>=net-libs/gsoap-2.8.50
 	sci-physics/egi-igtf
 	sci-physics/wlcg-voms"
 
