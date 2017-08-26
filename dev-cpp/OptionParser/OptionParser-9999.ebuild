@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit cmake-utils versionator
+inherit cmake-multilib versionator
 
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
@@ -25,7 +25,7 @@ IUSE="doc examples static-libs"
 DEPEND="${RDEPEND}
 	doc? ( app-doc/doxygen[dot] )"
 
-src_configure() {
+multilib_src_configure() {
 	local mycmakeargs=(
 			-DOptionParser_INSTALL_EXAMPLES="$(usex examples)"
 			-DINSTALL_STATIC_LIBS="$(usex static-libs)"
@@ -33,12 +33,12 @@ src_configure() {
 	cmake-utils_src_configure
 }
 
-src_compile() {
+multilib_src_compile() {
 	cmake-utils_src_compile
 	use doc && cmake-utils_src_compile doc
 }
 
-src_install() {
+multilib_src_install() {
 	cmake-utils_src_install
 	use doc && dodoc -r "${BUILD_DIR}/html"
 }
