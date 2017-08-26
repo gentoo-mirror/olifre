@@ -3,7 +3,7 @@
 
 EAPI="6"
 
-inherit cmake-utils git-r3 multilib
+inherit cmake-multilib git-r3
 
 DESCRIPTION="Core library for accessing the Microsoft Kinect."
 HOMEPAGE="https://github.com/olifre/${PN}"
@@ -20,7 +20,7 @@ RDEPEND="${COMMON_DEP}"
 DEPEND="${COMMON_DEP}
 	dev-util/cmake"
 
-src_install() {
+multilib_src_install() {
 	cmake-utils_src_install
 
 	# udev rules
