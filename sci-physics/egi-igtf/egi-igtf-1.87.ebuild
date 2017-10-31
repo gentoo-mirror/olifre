@@ -6,7 +6,7 @@ EAPI="6"
 DESCRIPTION="Trust anchors endorsed by EGI.eu"
 HOMEPAGE="https://wiki.egi.eu/wiki/EGI_IGTF_Release"
 
-# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.86/${PV}/'
+# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.87/${PV}/'
 SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AEGIS-${PV}.tar.gz
 		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_ANSPGrid-${PV}.tar.gz
 		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_ASGCCA-2007-${PV}.tar.gz
@@ -31,6 +31,8 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AEGIS-${PV}
 		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DFN-SLCS-${PV}.tar.gz
 		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DZeScience-${PV}.tar.gz
 		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DarkMatterAssuredCA-${PV}.tar.gz
+		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DarkMatterIGTFCA-${PV}.tar.gz
+		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DarkMatterPrivateRootCAG4-${PV}.tar.gz
 		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DarkMatterSecureCA-${PV}.tar.gz
 		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigiCertAssuredIDRootCA-Root-${PV}.tar.gz
 		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigiCertGridCA-1-Classic-${PV}.tar.gz
