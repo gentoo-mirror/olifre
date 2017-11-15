@@ -3,14 +3,17 @@
 
 EAPI=6
 
+# User namespaces don't play well with the sandbox.
+RESTRICT="test"
+
 if [[ ${PV} == "9999" ]] ; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/hpc/${PN}.git"
 	S="${WORKDIR}/${P}"
 else
-	SRC_URI="https://github.com/hpc/${PN}/releases/download/${PV}/${P}.tar.gz"
+	SRC_URI="https://github.com/hpc/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="amd64 x86 ~amd64-linux ~x86-linux"
-	S="${WORKDIR}/${PN}"
+	S="${WORKDIR}/${P}"
 fi
 
 DESCRIPTION="Lightweight user-defined software stacks for high-performance computing."
@@ -41,7 +44,7 @@ src_install() {
 	if use suid; then
 		export SETUID=1
 	fi
-	emake install PREFIX="${EPREFIX}/usr" DESTDIR="${ED}/usr"
+	emake install PREFIX="${EPREFIX}/usr" DESTDIR="${ED}"
 	dodoc README.rst COPYRIGHT
 	if use doc && ! use suid; then
 		if ! use suid; then
@@ -56,4 +59,17 @@ src_install() {
 		dodoc -r examples
 	fi
 	rm -rf "${ED}/usr/share/doc/charliecloud" || die
+}
+
+src_test() {
+	cd "${S}/test" || die
+	export CH_TEST_TARDIR="${T}/tarballs"
+	export CH_TEST_IMGDIR="${T}/images"
+
+	# Do not run tests requiring root.
+	export CH_TEST_PERMDIRS="skip"
+	export CH_TEST_SKIP_DOCKER=yes
+	sed -i 's/CHTEST_HAVE_SUDO=yes/CHTEST_HAVE_SUDO=no/' "${S}/test/common.bash" || die
+
+	emake test-quick
 }
