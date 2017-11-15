@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile install unpack
+DEFINED_PHASES=compile install test unpack
 DEPEND=doc? ( dev-python/sphinx dev-python/sphinx_rtd_theme ) test? ( app-arch/pigz ) >=dev-vcs/git-1.8.2.1
 DESCRIPTION=Lightweight user-defined software stacks for high-performance computing.
 EAPI=6
@@ -6,6 +6,7 @@ HOMEPAGE=https://hpc.github.io/charliecloud/
 IUSE=doc examples suid test
 KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=Apache-2.0
+RESTRICT=test
 SLOT=0
 _eclasses_=git-r3	52a888802d25387c2c74cb845d1219bc
-_md5_=53bf2b32f7b37a968d4fd4194e1b53d7
+_md5_=c5759af1ff1e5ee6074826c259fb2039
