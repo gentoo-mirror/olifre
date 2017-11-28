@@ -69,6 +69,7 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AEGIS-${PV}
 		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_NIKHEF-${PV}.tar.gz
 		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_NorduGrid-2015-${PV}.tar.gz
 		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_PK-Grid-2007-${PV}.tar.gz
+		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_PKIUNAMgrid-${PV}.tar.gz
 		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_PSC-Myproxy-CA-${PV}.tar.gz
 		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_PolishGrid-${PV}.tar.gz
 		http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_QuoVadis-Grid-ICA-${PV}.tar.gz
