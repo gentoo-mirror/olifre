@@ -2,10 +2,3 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-sci-physics/voms:clients - Install VOMS client components.
-sci-physics/voms:server - Install VOMS server component.
-sci-physics/wlcg-voms:alice - Install VOMS configuration for VO ALICE
-sci-physics/wlcg-voms:atlas - Install VOMS configuration for VO ATLAS
-sci-physics/wlcg-voms:cms - Install VOMS configuration for VO CMS
-sci-physics/wlcg-voms:lhcb - Install VOMS configuration for VO LHCb
-sci-physics/wlcg-voms:ops - Install VOMS configuration for VO OPS
