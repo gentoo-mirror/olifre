@@ -15,16 +15,17 @@ MY_PV="${MY_PV/p/post}"
 
 if [[ ${PV} == "9999" ]] ; then
 	inherit git-r3
-	EGIT_REPO_URI="https://gitlab.cern.ch/rucio01/rucio.git"
+	EGIT_REPO_URI="https://github.com/rucio/rucio.git"
 	#EGIT_COMMIT="${MY_PV}"
 	KEYWORDS=""
 else
-	inherit git-r3
-	EGIT_REPO_URI="https://gitlab.cern.ch/rucio01/rucio.git"
-	EGIT_COMMIT="${MY_PV}"
+	#inherit git-r3
+	#EGIT_REPO_URI="https://github.com/rucio/rucio.git"
+	#EGIT_COMMIT="${MY_PV}"
 	#inherit vcs-snapshot
-	#SRC_URI="https://gitlab.cern.ch/rucio01/rucio/repository/archive.tar.bz2?ref=${MY_PV} -> ${P}.tar.bz2"
+	SRC_URI="https://github.com/rucio/rucio/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
+	S="${WORKDIR}/rucio-${MY_PV}"
 fi
 
 LICENSE="Apache-2.0"

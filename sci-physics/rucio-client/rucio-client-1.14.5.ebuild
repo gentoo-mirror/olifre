@@ -5,16 +5,31 @@ EAPI="6"
 
 PYTHON_COMPAT=( python2_7 )
 
-inherit git-r3 python-r1 distutils-r1
+inherit python-r1 distutils-r1 versionator
 
 DESCRIPTION="Rucio is the new version of ATLAS DDM system services."
 HOMEPAGE="http://rucio.cern.ch/"
-EGIT_REPO_URI="https://gitlab.cern.ch/rucio01/rucio.git"
-EGIT_COMMIT="${PV}"
+
+MY_PV=$(replace_all_version_separators ".")
+MY_PV="${MY_PV/p/post}"
+
+if [[ ${PV} == "9999" ]] ; then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/rucio/rucio.git"
+	#EGIT_COMMIT="${MY_PV}"
+	KEYWORDS=""
+else
+	#inherit git-r3
+	#EGIT_REPO_URI="https://github.com/rucio/rucio.git"
+	#EGIT_COMMIT="${MY_PV}"
+	#inherit vcs-snapshot
+	SRC_URI="https://github.com/rucio/rucio/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
+	KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
+	S="${WORKDIR}/rucio-${MY_PV}"
+fi
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
 IUSE=""
 
 DEPEND=""
