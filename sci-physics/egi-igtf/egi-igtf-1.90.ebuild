@@ -6,8 +6,12 @@ EAPI="6"
 DESCRIPTION="Trust anchors endorsed by EGI.eu"
 HOMEPAGE="https://wiki.egi.eu/wiki/EGI_IGTF_Release"
 
-# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.89/${PV}/'
-SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AEGIS-${PV}.tar.gz
+# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.90/${PV}/'
+SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Personnels-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Robots-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Services-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AEGIS-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_ANSPGrid-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_ASGCCA-2007-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AddTrust-External-CA-Root-${PV}.tar.gz
@@ -47,6 +51,7 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AEGIS-${PV}
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_HPCI-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_HellasGrid-CA-2016-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_IGCA-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_IGCA2-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_IHEP-2013-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_INFN-CA-2015-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_IRAN-GRID-${PV}.tar.gz
