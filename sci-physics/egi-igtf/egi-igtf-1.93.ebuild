@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="6"
@@ -51,7 +51,6 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_HKU-CA-2-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_HPCI-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_HellasGrid-CA-2016-${PV}.tar.gz
-	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_IGCA-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_IGCA2-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_IHEP-2013-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_INFN-CA-2015-${PV}.tar.gz
