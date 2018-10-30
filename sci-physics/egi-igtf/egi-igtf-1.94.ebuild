@@ -6,7 +6,7 @@ EAPI="6"
 DESCRIPTION="Trust anchors endorsed by EGI.eu"
 HOMEPAGE="https://wiki.egi.eu/wiki/EGI_IGTF_Release"
 
-# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.92/${PV}/'
+# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.94/${PV}/'
 SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Personnels-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Robots-${PV}.tar.gz
@@ -32,7 +32,6 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_CyGrid-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DCAROOT-G1-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DFN-GridGermany-Root-${PV}.tar.gz
-	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DFN-SLCS-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DZeScience-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DarkMatterAssuredCA-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DarkMatterIGTFCA-${PV}.tar.gz
