@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Authors
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="6"
@@ -6,7 +6,7 @@ EAPI="6"
 DESCRIPTION="Trust anchors endorsed by EGI.eu"
 HOMEPAGE="https://wiki.egi.eu/wiki/EGI_IGTF_Release"
 
-# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.95/${PV}/'
+# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.96/${PV}/'
 SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Personnels-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Robots-${PV}.tar.gz
@@ -62,7 +62,7 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_KISTIv3-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_LIPCA-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_MARGI-${PV}.tar.gz
-	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_MD-Grid-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_MD-Grid-CA-T-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_MREN-CA-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_MYIFAM-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_MaGrid-${PV}.tar.gz
@@ -76,7 +76,6 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_PKIUNAMgrid-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_PSC-Myproxy-CA-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_PolishGrid-${PV}.tar.gz
-	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_QuoVadis-Grid-ICA-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_QuoVadis-Grid-ICA-G2-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_QuoVadis-Root-CA1-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_QuoVadis-Root-CA2-${PV}.tar.gz
