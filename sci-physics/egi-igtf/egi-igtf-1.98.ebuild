@@ -6,7 +6,7 @@ EAPI="6"
 DESCRIPTION="Trust anchors endorsed by EGI.eu"
 HOMEPAGE="https://wiki.egi.eu/wiki/EGI_IGTF_Release"
 
-# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.97/${PV}/'
+# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.98/${PV}/'
 SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Personnels-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Robots-${PV}.tar.gz
@@ -52,7 +52,6 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_IGCA2-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_IHEP-2013-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_INFN-CA-2015-${PV}.tar.gz
-	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_IRAN-GRID-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_IRAN-GRID-GCG-G2-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_InCommon-IGTF-Server-CA-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_KEK-${PV}.tar.gz
