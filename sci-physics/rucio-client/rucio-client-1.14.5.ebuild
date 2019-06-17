@@ -1,16 +1,16 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
+EAPI="7"
 
 PYTHON_COMPAT=( python2_7 )
 
-inherit python-r1 distutils-r1 versionator
+inherit python-r1 distutils-r1
 
 DESCRIPTION="Rucio is the new version of ATLAS DDM system services."
 HOMEPAGE="http://rucio.cern.ch/"
 
-MY_PV=$(replace_all_version_separators ".")
+MY_PV=$(ver_rs 1- ".")
 MY_PV="${MY_PV/p/post}"
 
 if [[ ${PV} == "9999" ]] ; then
