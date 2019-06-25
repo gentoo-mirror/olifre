@@ -1,12 +1,12 @@
 # Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
+EAPI="7"
 
 DESCRIPTION="Trust anchors endorsed by EGI.eu"
 HOMEPAGE="https://wiki.egi.eu/wiki/EGI_IGTF_Release"
 
-# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.99/${PV}/'
+# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.101/${PV}/'
 SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Personnels-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Robots-${PV}.tar.gz
@@ -72,6 +72,7 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_PKIUNAMgrid-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_PSC-Myproxy-CA-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_PolishGrid-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_PolishGrid-2019-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_QuoVadis-Grid-ICA-G2-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_QuoVadis-Root-CA1-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_QuoVadis-Root-CA2-${PV}.tar.gz
@@ -95,7 +96,6 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_UNAMgrid-ca-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_UNLPGrid-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_cilogon-basic-${PV}.tar.gz
-	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_cilogon-osg-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_cilogon-silver-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_policy_egi-cam-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_policy_egi-core-${PV}.tar.gz
