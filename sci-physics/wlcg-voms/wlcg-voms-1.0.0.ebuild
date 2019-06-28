@@ -33,9 +33,7 @@ src_install() {
 
 	if use dteam; then
 		mkdir -p etc/grid-security/vomsdir/dteam
-		for VO_HOST in {voms.hellasgrid.gr,voms2.hellasgrid.gr}; do
-			echo -e "/C=GR/O=HellasGrid/OU=hellasgrid.gr/CN=${VO_HOST}\n/C=GR/O=HellasGrid/OU=Certification Authorities/CN=HellasGrid CA 2016\n" > etc/grid-security/vomsdir/dteam/${VO_HOST}.lsc || die
-		done
+		echo -e "/C=GR/O=HellasGrid/OU=hellasgrid.gr/CN=voms2.hellasgrid.gr\n/C=GR/O=HellasGrid/OU=Certification Authorities/CN=HellasGrid CA 2016\n" > etc/grid-security/vomsdir/dteam/voms2.hellasgrid.gr.lsc || die
 	fi
 
 	insinto "/etc/grid-security/vomsdir"
