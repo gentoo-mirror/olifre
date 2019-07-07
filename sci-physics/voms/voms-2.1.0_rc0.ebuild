@@ -24,6 +24,11 @@ RDEPEND="${DEPEND}
 
 S="${WORKDIR}/${PN}-${MY_PV}"
 
+PATCHES=(
+	"${FILESDIR}"/fix-char.patch
+	"${FILESDIR}"/wsdl2h.patch
+)
+
 src_prepare() {
 	default
 	mkdir -p aux src/autogen || die
