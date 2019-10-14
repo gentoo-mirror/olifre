@@ -6,7 +6,7 @@ EAPI="7"
 DESCRIPTION="Trust anchors endorsed by EGI.eu"
 HOMEPAGE="https://wiki.egi.eu/wiki/EGI_IGTF_Release"
 
-# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.101/${PV}/'
+# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.102/${PV}/'
 SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Personnels-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Robots-${PV}.tar.gz
@@ -23,6 +23,7 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_CERN-LCG-IOTA-CA-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_CERN-Root-2-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_CESNET-CA-3-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_CESNET-CA-4-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_CESNET-CA-Root-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_CNIC-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_CNRS2-${PV}.tar.gz
