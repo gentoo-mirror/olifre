@@ -20,14 +20,23 @@ SRC_URI="alice? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-alice-$
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="+alice +atlas +cms +dteam +lhcb +ops"
+IUSE="+alice +atlas +belle +cms +dteam +lhcb +ops"
 
 S="${WORKDIR}/"
 
 src_install() {
 	insinto "/etc/vomses"
+	if use belle; then
+		mkdir -p etc/vomses || die
+		echo '"belle" "voms.cc.kek.jp" "15020" "/C=JP/O=KEK/OU=CRC/CN=host/voms.cc.kek.jp" "belle"' > etc/vomses/belle-voms.cc.kek.jp || die
+	fi
 	doins etc/vomses/*
 
 	insinto "/etc/grid-security/vomsdir"
+	if use belle; then
+		mkdir -p etc/grid-security/vomsdir/belle || die
+		echo -e '/C=JP/O=KEK/OU=CRC/CN=host/voms.cc.kek.jp\n/C=JP/O=KEK/OU=CRC/CN=KEK GRID Certificate Authority\n' > etc/grid-security/vomsdir/belle/voms.cc.kek.jp.lsc || die
+	fi
 	doins -r etc/grid-security/vomsdir/*
+
 }

@@ -8,6 +8,7 @@
   <use>
     <flag name="alice">Install VOMS configuration for VO ALICE</flag>
     <flag name="atlas">Install VOMS configuration for VO ATLAS</flag>
+    <flag name="belle">Install VOMS configuration for VO BELLE</flag>
     <flag name="cms">Install VOMS configuration for VO CMS</flag>
     <flag name="dteam">Install VOMS configuration for VO DTEAM</flag>
     <flag name="lhcb">Install VOMS configuration for VO LHCb</flag>
