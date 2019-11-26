@@ -5,7 +5,7 @@ EAPI="7"
 
 PYTHON_COMPAT=( python2_7 )
 
-inherit python-r1 distutils-r1
+inherit distutils-r1
 
 DESCRIPTION="Rucio is the new version of ATLAS DDM system services."
 HOMEPAGE="http://rucio.cern.ch/"
@@ -24,7 +24,7 @@ else
 	#EGIT_COMMIT="${MY_PV}"
 	#inherit vcs-snapshot
 	SRC_URI="https://github.com/rucio/rucio/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
+	KEYWORDS="~amd64 ~amd64-linux"
 	S="${WORKDIR}/rucio-${MY_PV}"
 fi
 
@@ -32,21 +32,27 @@ LICENSE="Apache-2.0"
 SLOT="0"
 IUSE=""
 
-DEPEND=""
 RDEPEND="dev-python/argcomplete[${PYTHON_USEDEP}]
 	dev-python/dogpile-cache[${PYTHON_USEDEP}]
 	dev-python/pykerberos[${PYTHON_USEDEP}]
-	dev-python/progressbar[${PYTHON_USEDEP}]
+	dev-python/progressbar2[${PYTHON_USEDEP}]
+	dev-python/bz2file[${PYTHON_USEDEP}]
+	dev-python/futures[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
 	dev-python/python-swiftclient[${PYTHON_USEDEP}]
 	dev-python/retrying[${PYTHON_USEDEP}]
+	dev-python/urllib3[${PYTHON_USEDEP}]
+	dev-python/boto[${PYTHON_USEDEP}]
+	dev-python/boto3[${PYTHON_USEDEP}]
+	dev-python/nose[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/requests-kerberos[${PYTHON_USEDEP}]
 	dev-python/tabulate[${PYTHON_USEDEP}]
 	|| ( dev-python/python-magic[${PYTHON_USEDEP}] sys-apps/file[python,${PYTHON_USEDEP}] )
 	"
+DEPEND="${RDEPEND}"
 
-src_prepare() {
+python_prepare_all() {
 	mv setup_rucio_client.py setup.py
-	default
+	distutils-r1_python_prepare_all
 }
