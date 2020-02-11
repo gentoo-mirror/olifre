@@ -8,5 +8,5 @@ KEYWORDS=~amd64 ~x86
 LICENSE=Apache-2.0
 SLOT=0
 SRC_URI=alice? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-alice-1.0.0-1.el7.noarch.rpm ) atlas? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-atlas-1.0.0-1.el7.noarch.rpm ) cms? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-cms-1.0.0-1.el7.noarch.rpm ) dteam? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-dteam-1.0.0-1.el7.noarch.rpm ) lhcb? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-lhcb-1.0.0-1.el7.noarch.rpm ) ops? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-ops-1.0.0-1.el7.noarch.rpm )
-_eclasses_=estack	686eaab303305a908fd57b2fd7617800	eutils	fcb2aa98e1948b835b5ae66ca52868c5	rpm	b03b38188e1e83766244d2046785d562
+_eclasses_=estack	686eaab303305a908fd57b2fd7617800	eutils	fcb2aa98e1948b835b5ae66ca52868c5	rpm	c1d552831d4ee9c7bb82c35545c264c8
 _md5_=e93dbf605255a924ace0c311721bef4c
