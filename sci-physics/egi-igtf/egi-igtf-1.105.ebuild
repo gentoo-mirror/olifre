@@ -6,7 +6,7 @@ EAPI="7"
 DESCRIPTION="Trust anchors endorsed by EGI.eu"
 HOMEPAGE="https://wiki.egi.eu/wiki/EGI_IGTF_Release"
 
-# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.104/${PV}/'
+# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.105/${PV}/'
 SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Personnels-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Robots-${PV}.tar.gz
@@ -19,7 +19,6 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_BG-ACAD-CA-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_BYGCA-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_CERN-GridCA-${PV}.tar.gz
-	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_CERN-LCG-IOTA-CA-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_CERN-Root-2-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_CESNET-CA-4-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_CESNET-CA-Root-${PV}.tar.gz
@@ -41,6 +40,8 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigiCertGridRootCA-Root-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigiCertGridTrustCA-Classic-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigiCertGridTrustCAG2-Classic-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_GEANTeSciencePersonalCA4-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_GEANTeScienceSSLCA4-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_GermanGrid-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_GridCanada-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_HKU-CA-2-${PV}.tar.gz
@@ -94,6 +95,7 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_UKeScienceRoot-2007-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_UNAMgrid-ca-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_UNLPGrid-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_USERTrustRSACertificationAuthority-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_cilogon-basic-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_cilogon-silver-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_policy_egi-cam-${PV}.tar.gz
