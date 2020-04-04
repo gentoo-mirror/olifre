@@ -13,5 +13,6 @@
     <flag name="dteam">Install VOMS configuration for VO DTEAM</flag>
     <flag name="lhcb">Install VOMS configuration for VO LHCb</flag>
     <flag name="ops">Install VOMS configuration for VO OPS</flag>
+    <flag name="wlcg">Install VOMS configuration for VO WLCG</flag>
   </use>
 </pkgmetadata>
