@@ -11,3 +11,4 @@ sci-physics/wlcg-voms:cms - Install VOMS configuration for VO CMS
 sci-physics/wlcg-voms:dteam - Install VOMS configuration for VO DTEAM
 sci-physics/wlcg-voms:lhcb - Install VOMS configuration for VO LHCb
 sci-physics/wlcg-voms:ops - Install VOMS configuration for VO OPS
+sci-physics/wlcg-voms:wlcg - Install VOMS configuration for VO WLCG
