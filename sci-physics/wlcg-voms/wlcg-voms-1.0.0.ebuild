@@ -39,12 +39,12 @@ src_install() {
 	insinto "/etc/grid-security/vomsdir"
 	if use belle; then
 		mkdir -p etc/grid-security/vomsdir/belle || die
-		echo -e '/C=JP/O=KEK/OU=CRC/CN=host/voms.cc.kek.jp\n/C=JP/O=KEK/OU=CRC/CN=KEK GRID Certificate Authority\n' > etc/grid-security/vomsdir/belle/voms.cc.kek.jp.lsc || die
+		echo '/C=JP/O=KEK/OU=CRC/CN=host/voms.cc.kek.jp\n/C=JP/O=KEK/OU=CRC/CN=KEK GRID Certificate Authority' > etc/grid-security/vomsdir/belle/voms.cc.kek.jp.lsc || die
 	fi
 	if use wlcg; then
 		mkdir -p etc/grid-security/vomsdir/wlcg || die
-		echo -e '/DC=org/DC=terena/DC=tcs/C=IT/L=Frascati/O=Istituto Nazionale di Fisica Nucleare/CN=wlcg-voms.cloud.cnaf.infn.it\n' > etc/grid-security/vomsdir/wlcg/wlcg-voms.cloud.cnaf.infn.it.lsc || die
-		echo -e '/C=NL/ST=Noord-Holland/L=Amsterdam/O=TERENA/CN=TERENA eScience SSL CA 3\n' >> etc/grid-security/vomsdir/wlcg/wlcg-voms.cloud.cnaf.infn.it.lsc || die
+		echo '/DC=org/DC=terena/DC=tcs/C=IT/L=Frascati/O=Istituto Nazionale di Fisica Nucleare/CN=wlcg-voms.cloud.cnaf.infn.it' > etc/grid-security/vomsdir/wlcg/wlcg-voms.cloud.cnaf.infn.it.lsc || die
+		echo '/C=NL/ST=Noord-Holland/L=Amsterdam/O=TERENA/CN=TERENA eScience SSL CA 3' >> etc/grid-security/vomsdir/wlcg/wlcg-voms.cloud.cnaf.infn.it.lsc || die
 	fi
 	doins -r etc/grid-security/vomsdir/*
 
