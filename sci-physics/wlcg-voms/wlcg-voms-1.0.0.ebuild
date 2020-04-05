@@ -39,7 +39,7 @@ src_install() {
 	insinto "/etc/grid-security/vomsdir"
 	if use belle; then
 		mkdir -p etc/grid-security/vomsdir/belle || die
-		echo '/C=JP/O=KEK/OU=CRC/CN=host/voms.cc.kek.jp\n/C=JP/O=KEK/OU=CRC/CN=KEK GRID Certificate Authority' > etc/grid-security/vomsdir/belle/voms.cc.kek.jp.lsc || die
+		echo -e '/C=JP/O=KEK/OU=CRC/CN=host/voms.cc.kek.jp\n/C=JP/O=KEK/OU=CRC/CN=KEK GRID Certificate Authority' > etc/grid-security/vomsdir/belle/voms.cc.kek.jp.lsc || die
 	fi
 	if use wlcg; then
 		mkdir -p etc/grid-security/vomsdir/wlcg || die
