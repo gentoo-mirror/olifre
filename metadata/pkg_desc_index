@@ -1,7 +1,7 @@
 app-misc/alienfx 9999: Core library for accessing the Microsoft Kinect.
 dev-cpp/OptionParser 9999: templated C++ command line option parser with executable for shell scripts
 media-gfx/textext 0.6.1: Inkscape extension to embed re-editable LaTeX objects in SVG drawings
-sci-physics/egi-igtf 1.105: Trust anchors endorsed by EGI.eu
+sci-physics/egi-igtf 1.106: Trust anchors endorsed by EGI.eu
 sci-physics/rucio-client 1.21.9 9999: Rucio is the new version of ATLAS DDM system services.
 sci-physics/voms 2.1.0_rc0: The VOMS native service and APIs
 sci-physics/voms-clients 3.3.0: Command-line clients for Virtual Organization Membership Service (VOMS)
