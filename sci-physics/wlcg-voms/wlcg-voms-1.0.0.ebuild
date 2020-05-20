@@ -32,7 +32,7 @@ src_install() {
 	fi
 	if use wlcg; then
 		mkdir -p etc/vomses || die
-		echo '"wlcg" "wlcg-voms.cloud.cnaf.infn.it" "15001" "/DC=org/DC=terena/DC=tcs/C=IT/L=Frascati/O=Istituto Nazionale di Fisica Nucleare/CN=voms-wlcg.cloud.cnaf.infn.it" "wlcg"' > etc/vomses/wlcg-voms.cloud.cnaf.infn.it || die
+		echo '"wlcg" "wlcg-voms.cloud.cnaf.infn.it" "15001" "/DC=org/DC=terena/DC=tcs/C=IT/L=Frascati/O=Istituto Nazionale di Fisica Nucleare/CN=wlcg-voms.cloud.cnaf.infn.it" "wlcg"' > etc/vomses/wlcg-voms.cloud.cnaf.infn.it || die
 	fi
 	doins etc/vomses/*
 
