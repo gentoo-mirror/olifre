@@ -20,7 +20,7 @@ HOMEPAGE="https://taisei-project.org/"
 
 LICENSE="MIT CC-BY-4.0 CC0-1.0 public-domain"
 SLOT="0"
-IUSE="doc"
+IUSE="doc +lto"
 
 RDEPEND="
 	>=media-libs/libsdl2-2.0.6
@@ -48,7 +48,7 @@ src_prepare() {
 src_configure() {
 	local emesonargs=(
 		$(meson_use doc docs)
-		-Db_lto=false
+		$(meson_use lto b_lto)
 		-Dstrip=false
 	)
 	meson_src_configure
