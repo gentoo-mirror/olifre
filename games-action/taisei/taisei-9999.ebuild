@@ -48,6 +48,8 @@ src_prepare() {
 src_configure() {
 	local emesonargs=(
 		$(meson_use doc docs)
+		-Db_lto=false
+		-Dstrip=false
 	)
 	meson_src_configure
 }
