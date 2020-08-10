@@ -6,7 +6,7 @@ EAPI="7"
 DESCRIPTION="Trust anchors endorsed by EGI.eu"
 HOMEPAGE="https://wiki.egi.eu/wiki/EGI_IGTF_Release"
 
-# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.106/${PV}/'
+# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.107/${PV}/'
 SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Personnels-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Robots-${PV}.tar.gz
@@ -29,10 +29,8 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DCAROOT-G1-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DFN-GridGermany-Root-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DZeScience-${PV}.tar.gz
-	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DarkMatterAssuredCA-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DarkMatterIGTFCA-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DarkMatterPrivateRootCAG4-${PV}.tar.gz
-	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DarkMatterSecureCA-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigiCertAssuredIDRootCA-Root-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigiCertGridCA-1-Classic-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigiCertGridCA-1G2-Classic-2015-${PV}.tar.gz
@@ -40,7 +38,9 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigiCertGridTrustCA-Classic-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigiCertGridTrustCAG2-Classic-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_GEANTeSciencePersonalCA4-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_GEANTeSciencePersonalECCCA4-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_GEANTeScienceSSLCA4-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_GEANTeScienceSSLECCCA4-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_GermanGrid-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_GridCanada-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_HKU-CA-2-${PV}.tar.gz
@@ -69,7 +69,6 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_PK-Grid-2007-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_PKIUNAMgrid-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_PSC-Myproxy-CA-${PV}.tar.gz
-	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_PolishGrid-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_PolishGrid-2019-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_QuoVadis-Grid-ICA-G2-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_QuoVadis-Root-CA1-${PV}.tar.gz
@@ -93,6 +92,7 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_UKeScienceRoot-2007-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_UNAMgrid-ca-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_UNLPGrid-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_USERTrustECCCertificationAuthority-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_USERTrustRSACertificationAuthority-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_cilogon-basic-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_cilogon-silver-${PV}.tar.gz
