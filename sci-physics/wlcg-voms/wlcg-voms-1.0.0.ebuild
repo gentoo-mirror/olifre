@@ -29,6 +29,8 @@ src_install() {
 	if use belle; then
 		mkdir -p etc/vomses || die
 		echo '"belle" "voms.cc.kek.jp" "15020" "/C=JP/O=KEK/OU=CRC/CN=host/voms.cc.kek.jp" "belle"' > etc/vomses/belle-voms.cc.kek.jp || die
+		# Backup VOMS server at DESY would be:
+		# '"belle" "grid-voms.desy.de" "15020" "/C=DE/O=GermanGrid/OU=DESY/CN=host/grid-voms.desy.de" "belle" "24"'
 	fi
 	if use wlcg; then
 		mkdir -p etc/vomses || die
@@ -40,6 +42,8 @@ src_install() {
 	if use belle; then
 		mkdir -p etc/grid-security/vomsdir/belle || die
 		echo -e '/C=JP/O=KEK/OU=CRC/CN=host/voms.cc.kek.jp\n/C=JP/O=KEK/OU=CRC/CN=KEK GRID Certificate Authority' > etc/grid-security/vomsdir/belle/voms.cc.kek.jp.lsc || die
+		# Backup VOMS server at DESY.
+		echo -e '/C=DE/O=GermanGrid/OU=DESY/CN=host/grid-voms.desy.de\n/C=DE/O=GermanGrid/CN=GridKa-CA' > etc/grid-security/vomsdir/belle/grid-voms.desy.de.lsc || die
 	fi
 	if use wlcg; then
 		mkdir -p etc/grid-security/vomsdir/wlcg || die
