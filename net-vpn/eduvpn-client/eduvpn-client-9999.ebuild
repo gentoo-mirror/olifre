@@ -22,9 +22,13 @@ HOMEPAGE="https://eduvpn.org/"
 
 SLOT="0"
 LICENSE="GPL-3+"
-#IUSE="doc test"
+#IUSE="test"
 
-DEPEND="
+# Test suite involves adding NetworkManager configuration entries,
+# disable for now.
+RESTRICT="test"
+
+RDEPEND="
 	dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/pynacl[${PYTHON_USEDEP}]
 	dev-python/requests-oauthlib[${PYTHON_USEDEP}]
@@ -42,3 +46,7 @@ python_prepare_all() {
 		-e "s/find_packages()/find_packages(exclude=['tests*'])/" \
 		-i setup.py || die
 }
+
+distutils_enable_sphinx doc
+
+#distutils_enable_tests pytest
