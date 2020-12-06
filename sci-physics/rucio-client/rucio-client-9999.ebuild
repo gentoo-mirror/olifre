@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-PYTHON_COMPAT=( python{3_6,3_7} )
+PYTHON_COMPAT=( python{3_7,3_8} )
 
 inherit distutils-r1
 
@@ -24,7 +24,7 @@ else
 	#EGIT_COMMIT="${MY_PV}"
 	#inherit vcs-snapshot
 	SRC_URI="https://github.com/rucio/rucio/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~amd64 ~amd64-linux"
+	KEYWORDS="~amd64"
 	S="${WORKDIR}/rucio-${MY_PV}"
 fi
 
