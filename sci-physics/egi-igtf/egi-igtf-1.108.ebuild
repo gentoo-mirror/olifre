@@ -6,7 +6,7 @@ EAPI="7"
 DESCRIPTION="Trust anchors endorsed by EGI.eu"
 HOMEPAGE="https://wiki.egi.eu/wiki/EGI_IGTF_Release"
 
-# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.107/${PV}/'
+# curl -s http://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttp://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.108/${PV}/'
 SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Personnels-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-Robots-${PV}.tar.gz
@@ -37,6 +37,12 @@ SRC_URI="http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_AC-GRID-FR-
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigiCertGridRootCA-Root-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigiCertGridTrustCA-Classic-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigiCertGridTrustCAG2-Classic-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigitalTrustAssuredCAG3-runbytheissuer-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigitalTrustAssuredCAG4-runbytheissuer-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigitalTrustIGTFCA-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigitalTrustPrivateRootCAG4-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigitalTrustSecureCAG3-runbytheissuer-${PV}.tar.gz
+	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_DigitalTrustSecureCAG4-runbytheissuer-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_GEANTeSciencePersonalCA4-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_GEANTeSciencePersonalECCCA4-${PV}.tar.gz
 	http://repository.egi.eu/sw/production/cas/1/current/tgz/ca_GEANTeScienceSSLCA4-${PV}.tar.gz
