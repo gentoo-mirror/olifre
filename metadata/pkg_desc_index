@@ -1,5 +1,6 @@
 app-misc/alienfx 9999: Core library for accessing the Microsoft Kinect.
 dev-cpp/OptionParser 9999: templated C++ command line option parser with executable for shell scripts
+dev-python/swampy 3.0.1: Swampy is a suite of Python programs that support the textbooks
 media-gfx/textext 0.6.1: Inkscape extension to embed re-editable LaTeX objects in SVG drawings
 net-vpn/eduvpn-client 1.1 9999: Linux client and Python client API for eduVPN
 sci-physics/egi-igtf 1.108: Trust anchors endorsed by EGI.eu
