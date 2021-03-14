@@ -1,13 +1,13 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
+EAPI="7"
 
 inherit cmake-multilib git-r3
 
 DESCRIPTION="Core library for accessing the Microsoft Kinect."
 HOMEPAGE="https://github.com/olifre/${PN}"
-EGIT_REPO_URI="git://github.com/olifre/${PN}.git"
+EGIT_REPO_URI="https://github.com/olifre/${PN}.git"
 
 LICENSE="GPL-2"
 SLOT="0"
