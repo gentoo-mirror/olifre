@@ -1,8 +1,9 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
-PYTHON_COMPAT=( python{3_8,3_9} )
+EAPI=8
+PYTHON_COMPAT=( python3_{8,9} )
+PYTHON_REQ_USE="tk"
 
 MY_PN=swampy
 MY_P=${MY_PN}-${PV}
@@ -24,6 +25,4 @@ DISTUTILS_USE_SETUPTOOLS=no
 src_prepare() {
 	eapply_user
 	sed -i -e "s#data_files=\[('swampy'#data_files=\[('share/swampy'#" setup.py || die
-	pwd
-	cat setup.py
 }
