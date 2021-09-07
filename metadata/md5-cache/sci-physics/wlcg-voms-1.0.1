@@ -1,0 +1,13 @@
+BDEPEND=app-arch/rpm2targz
+DEFINED_PHASES=install unpack
+DESCRIPTION=VOMS LSC files
+EAPI=7
+HOMEPAGE=https://twiki.cern.ch/twiki/bin/view/LCG/VOMSLSCfileConfiguration
+INHERIT=rpm
+IUSE=+alice +atlas +belle +cms +dteam +lhcb +ops +wlcg
+KEYWORDS=~amd64 ~x86
+LICENSE=Apache-2.0
+SLOT=0
+SRC_URI=alice? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-alice-1.0.0-1.el7.noarch.rpm http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-iam-lsc-alice-1.0.0-1.el7.noarch.rpm ) atlas? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-atlas-1.0.0-1.el7.noarch.rpm http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-iam-lsc-atlas-1.0.0-1.el7.noarch.rpm ) cms? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-cms-1.0.0-1.el7.noarch.rpm http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-iam-lsc-cms-1.0.0-1.el7.noarch.rpm ) dteam? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-dteam-1.0.0-1.el7.noarch.rpm ) lhcb? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-lhcb-1.0.0-1.el7.noarch.rpm http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-iam-lsc-lhcb-1.0.0-1.el7.noarch.rpm ) ops? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-ops-1.0.0-1.el7.noarch.rpm ) wlcg? ( https://repo.cloud.cnaf.infn.it/repository/infn-vos/centos7/infn-vo-wlcg-1.0.0-0.el7.noarch.rpm )
+_eclasses_=edos2unix	33e347e171066657f91f8b0c72ec8773	strip-linguas	ac3ee41ee2d31d8c41a77c0838320cc7	wrapper	4251d4c84c25f59094fd557e0063a974	eutils	dab5d8ec471d025b79c9e6906bcf3bff	estack	055c42df72f76a4f45ec92b35e83cd56	rpm	f73e907469f65e52192f110dec72dce0
+_md5_=067da7089d3e54f06224ec2b8bb92687
