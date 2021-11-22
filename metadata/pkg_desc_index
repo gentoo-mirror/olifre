@@ -7,5 +7,5 @@ sci-physics/egi-igtf 1.113: Trust anchors endorsed by EGI.eu
 sci-physics/rucio-client 1.21.9 1.25.5 9999: Rucio is the new version of ATLAS DDM system services.
 sci-physics/voms 2.1.0_rc0: The VOMS native service and APIs
 sci-physics/voms-clients 3.3.0: Command-line clients for Virtual Organization Membership Service (VOMS)
-sci-physics/wlcg-voms 1.0.0 1.0.1: VOMS LSC files
+sci-physics/wlcg-voms 1.0.0 1.0.1 1.0.2: VOMS LSC files
 x11-misc/xplanetFX 2.6.14: GUI to configure, run or daemonize xplanet with HQ capabilities
