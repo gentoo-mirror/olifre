@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-PYTHON_COMPAT=( python3_{8,9} )
+PYTHON_COMPAT=( python3_{8,9,10} )
 PYTHON_REQ_USE="tk"
 
 MY_PN=swampy
@@ -20,7 +20,7 @@ KEYWORDS="~amd64 ~x86"
 
 S=${WORKDIR}/${MY_P}
 
-DISTUTILS_USE_SETUPTOOLS=no
+#DISTUTILS_USE_SETUPTOOLS=no
 
 src_prepare() {
 	eapply_user
