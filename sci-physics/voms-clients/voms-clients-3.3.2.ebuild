@@ -8,7 +8,7 @@ inherit java-pkg-2
 MY_PV=$(ver_rs 3 '-')
 
 DESCRIPTION="Command-line clients for Virtual Organization Membership Service (VOMS)"
-HOMEPAGE="https://italiangrid.github.io/voms"
+HOMEPAGE="https://italiangrid.github.io/voms/"
 SRC_URI="https://github.com/italiangrid/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="Apache-2.0"

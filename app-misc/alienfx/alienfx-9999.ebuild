@@ -6,7 +6,7 @@ EAPI="7"
 inherit cmake-multilib git-r3
 
 DESCRIPTION="Core library for accessing the Microsoft Kinect."
-HOMEPAGE="https://github.com/olifre/${PN}"
+HOMEPAGE="https://github.com/olifre/alienfx"
 EGIT_REPO_URI="https://github.com/olifre/${PN}.git"
 
 LICENSE="GPL-2"

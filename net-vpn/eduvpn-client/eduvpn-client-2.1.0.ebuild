@@ -18,7 +18,7 @@ else
 fi
 
 DESCRIPTION="Linux client and Python client API for eduVPN"
-HOMEPAGE="https://eduvpn.org/"
+HOMEPAGE="https://www.eduvpn.org/"
 
 SLOT="0"
 LICENSE="GPL-3+"

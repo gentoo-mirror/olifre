@@ -8,7 +8,7 @@ PYTHON_COMPAT=( python{3_7,3_8} )
 inherit distutils-r1
 
 DESCRIPTION="Rucio is the new version of ATLAS DDM system services."
-HOMEPAGE="http://rucio.cern.ch/"
+HOMEPAGE="https://rucio.cern.ch/"
 
 MY_PV=$(ver_rs 1- ".")
 MY_PV="${MY_PV/p/post}"
