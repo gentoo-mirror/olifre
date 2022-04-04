@@ -11,12 +11,12 @@ WLCG_RPM_VER=${PV}-1
 DESCRIPTION="VOMS LSC files"
 HOMEPAGE="https://twiki.cern.ch/twiki/bin/view/LCG/VOMSLSCfileConfiguration"
 
-SRC_URI="alice? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-alice-${RPM_VER}.el7.noarch.rpm )
-	atlas? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-atlas-${RPM_VER}.el7.noarch.rpm )
-	cms? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-cms-${RPM_VER}.el7.noarch.rpm )
-	dteam? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-dteam-${RPM_VER}.el7.noarch.rpm )
-	lhcb? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-lhcb-${RPM_VER}.el7.noarch.rpm )
-	ops? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-ops-${RPM_VER}.el7.noarch.rpm )
+SRC_URI="alice? ( https://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-alice-${RPM_VER}.el7.noarch.rpm )
+	atlas? ( https://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-atlas-${RPM_VER}.el7.noarch.rpm )
+	cms? ( https://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-cms-${RPM_VER}.el7.noarch.rpm )
+	dteam? ( https://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-dteam-${RPM_VER}.el7.noarch.rpm )
+	lhcb? ( https://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-lhcb-${RPM_VER}.el7.noarch.rpm )
+	ops? ( https://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-ops-${RPM_VER}.el7.noarch.rpm )
 	wlcg? ( https://repo.cloud.cnaf.infn.it/repository/infn-vos/centos7/infn-vo-wlcg-1.0.0-0.el7.noarch.rpm )"
 
 LICENSE="Apache-2.0"

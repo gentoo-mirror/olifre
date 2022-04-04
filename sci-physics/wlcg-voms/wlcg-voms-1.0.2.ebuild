@@ -13,25 +13,25 @@ DESCRIPTION="VOMS LSC files"
 HOMEPAGE="https://twiki.cern.ch/twiki/bin/view/LCG/VOMSLSCfileConfiguration"
 
 SRC_URI="alice? (
-		http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-alice-${RPM_VER}.el7.noarch.rpm
-		http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-iam-lsc-alice-${WLCG_IAM_RPM_VER}.el7.noarch.rpm
+		https://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-alice-${RPM_VER}.el7.noarch.rpm
+		https://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-iam-lsc-alice-${WLCG_IAM_RPM_VER}.el7.noarch.rpm
 	)
 	atlas? (
-		http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-atlas-${RPM_VER}.el7.noarch.rpm
-		http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-iam-lsc-atlas-${WLCG_IAM_RPM_VER}.el7.noarch.rpm
+		https://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-atlas-${RPM_VER}.el7.noarch.rpm
+		https://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-iam-lsc-atlas-${WLCG_IAM_RPM_VER}.el7.noarch.rpm
 	)
 	cms? (
-		http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-cms-${RPM_VER}.el7.noarch.rpm
-		http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-iam-lsc-cms-${WLCG_IAM_RPM_VER}.el7.noarch.rpm
+		https://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-cms-${RPM_VER}.el7.noarch.rpm
+		https://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-iam-lsc-cms-${WLCG_IAM_RPM_VER}.el7.noarch.rpm
 	)
 	dteam? (
-		http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-dteam-${RPM_VER}.el7.noarch.rpm
+		https://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-dteam-${RPM_VER}.el7.noarch.rpm
 	)
 	lhcb? (
-		http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-lhcb-${RPM_VER}.el7.noarch.rpm
-		http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-iam-lsc-lhcb-${WLCG_IAM_RPM_VER}.el7.noarch.rpm
+		https://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-lhcb-${RPM_VER}.el7.noarch.rpm
+		https://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-iam-lsc-lhcb-${WLCG_IAM_RPM_VER}.el7.noarch.rpm
 	)
-	ops? ( http://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-ops-${RPM_VER}.el7.noarch.rpm )
+	ops? ( https://linuxsoft.cern.ch/wlcg/centos7/x86_64/wlcg-voms-ops-${RPM_VER}.el7.noarch.rpm )
 	wlcg? ( https://repo.cloud.cnaf.infn.it/repository/infn-vos/centos7/infn-vo-wlcg-${WLCG_RPM_VER}.el7.noarch.rpm )
 	"
 

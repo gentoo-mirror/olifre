@@ -5,11 +5,11 @@ EAPI=6
 
 #PYTHON_COMPAT=( python2_7 )
 
-inherit desktop eutils
-# python-r1
+inherit desktop
+# eutils python-r1
 
 DESCRIPTION="GUI to configure, run or daemonize xplanet with HQ capabilities"
-HOMEPAGE="http://mein-neues-blog.de/xplanetFX/"
+HOMEPAGE="https://mein-neues-blog.de/category/xplanetFX/"
 SRC_URI="http://repository.mein-neues-blog.de:9000/archive/${P/FX/fx}_all.tar.gz"
 
 LICENSE="WTFPL-2"
