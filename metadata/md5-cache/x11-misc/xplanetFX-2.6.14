@@ -1,6 +1,6 @@
 DEFINED_PHASES=install prepare
 DESCRIPTION=GUI to configure, run or daemonize xplanet with HQ capabilities
-EAPI=6
+EAPI=8
 HOMEPAGE=https://mein-neues-blog.de/category/xplanetFX/
 INHERIT=desktop
 IUSE=libnotify
@@ -10,4 +10,4 @@ RDEPEND=media-gfx/imagemagick sys-devel/bc x11-misc/xplanet libnotify? ( x11-lib
 SLOT=0
 SRC_URI=http://repository.mein-neues-blog.de:9000/archive/xplanetfx-2.6.14_all.tar.gz
 _eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28
-_md5_=5f50b9bcb9d848becb59db9b6865dd4b
+_md5_=fee11f7240de30ad1b60b25cebf01202
