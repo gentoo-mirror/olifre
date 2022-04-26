@@ -5,5 +5,5 @@ HOMEPAGE=https://wiki.egi.eu/wiki/EGI_IGTF_Release
 KEYWORDS=~amd64 ~x86
 LICENSE=CC-BY-3.0
 SLOT=0
-SRC_URI=http://repository.egi.eu/sw/production/cas/1/ca-policy-egi-cam-1.116-1/tgz/igtf-preinstalled-bundle-classic.tar.gz -> igtf-preinstalled-bundle-classic-1.116-1.tar.gz http://repository.egi.eu/sw/production/cas/1/ca-policy-egi-cam-1.116-1/tgz/igtf-preinstalled-bundle-iota.tar.gz -> igtf-preinstalled-bundle-iota-1.116-1.tar.gz http://repository.egi.eu/sw/production/cas/1/ca-policy-egi-cam-1.116-1/tgz/igtf-preinstalled-bundle-mics.tar.gz -> igtf-preinstalled-bundle-mics-1.116-1.tar.gz http://repository.egi.eu/sw/production/cas/1/ca-policy-egi-cam-1.116-1/tgz/igtf-preinstalled-bundle-slcs.tar.gz -> igtf-preinstalled-bundle-slcs-1.116-1.tar.gz
-_md5_=2d2037541d9a6ff06c00e8e72e8535ad
+SRC_URI=https://repository.egi.eu/sw/production/cas/1/ca-policy-egi-cam-1.116-1/tgz/igtf-preinstalled-bundle-classic.tar.gz -> igtf-preinstalled-bundle-classic-1.116-1.tar.gz https://repository.egi.eu/sw/production/cas/1/ca-policy-egi-cam-1.116-1/tgz/igtf-preinstalled-bundle-iota.tar.gz -> igtf-preinstalled-bundle-iota-1.116-1.tar.gz https://repository.egi.eu/sw/production/cas/1/ca-policy-egi-cam-1.116-1/tgz/igtf-preinstalled-bundle-mics.tar.gz -> igtf-preinstalled-bundle-mics-1.116-1.tar.gz https://repository.egi.eu/sw/production/cas/1/ca-policy-egi-cam-1.116-1/tgz/igtf-preinstalled-bundle-slcs.tar.gz -> igtf-preinstalled-bundle-slcs-1.116-1.tar.gz
+_md5_=d3f87e492026f03442825af40ffbc31b
