@@ -1,11 +1,11 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI="8"
 
 inherit cmake-multilib git-r3
 
-DESCRIPTION="Core library for accessing the Microsoft Kinect."
+DESCRIPTION="AlienFX lights control on Alienware hardware."
 HOMEPAGE="https://github.com/olifre/alienfx"
 EGIT_REPO_URI="https://github.com/olifre/${PN}.git"
 
@@ -14,28 +14,13 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-COMMON_DEP="virtual/libusb:1"
-
-RDEPEND="${COMMON_DEP}"
-DEPEND="${COMMON_DEP}
+RDEPEND="virtual/libusb:1"
+DEPEND="${RDEPEND}
 	dev-util/cmake"
 
-multilib_src_install() {
-	cmake-utils_src_install
-
-	# udev rules
-	#insinto /lib/udev/rules.d/
-	#doins "${S}"/platform/linux/udev/51-kinect.rules
-
-	# documentation
-	#dodoc README.md
-	#if use doc; then
-	#    cd doc
-	#    doxygen || ewarn "doxygen failed"
-	#    dodoc -r html || ewarn "dodoc failed"
-	#    cd -
-	#fi
-}
+#multilib_src_install() {
+#	cmake_src_install
+#}
 
 pkg_postinst() {
 	elog "Beware: This package is WIP!"
