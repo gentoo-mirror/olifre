@@ -1,3 +1,4 @@
+app-misc/alienfx 9999: AlienFX lights control on Alienware hardware.
 dev-cpp/OptionParser 9999: templated C++ command line option parser with executable for shell scripts
 dev-python/swampy 3.0.1: Swampy is a suite of Python programs that support the textbooks
 media-gfx/textext 1.4.0 1.5.0: Re-editable LaTeX graphics for Inkscape
