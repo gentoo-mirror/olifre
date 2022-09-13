@@ -3,8 +3,8 @@
 
 EAPI=8
 
+DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{8,9,10} )
-
 inherit distutils-r1
 
 DESCRIPTION="Rucio is the new version of ATLAS DDM system services."
@@ -46,4 +46,11 @@ DEPEND="${RDEPEND}"
 python_prepare_all() {
 	mv setup_rucio_client.py setup.py
 	distutils-r1_python_prepare_all
+}
+
+python_install() {
+	distutils-r1_python_install
+	mkdir -p "$D"/etc/ || die
+	mv "$D"/usr/etc "$D"/etc/rucio || die
+	rm "$D"/usr/requirements.txt || die
 }
