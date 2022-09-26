@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8,9} )
+PYTHON_COMPAT=( python3_{8..10} )
 PYTHON_REQ_USE="tk?"
 
 inherit python-single-r1
@@ -16,6 +16,7 @@ LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="doc +gtk tk"
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 BDEPEND="
 	doc? (
@@ -38,6 +39,7 @@ RDEPEND="
 	$(python_gen_cond_dep '
 		dev-python/lxml[${PYTHON_USEDEP}]
 	')
+	${PYTHON_DEPS}
 "
 DEPEND="${RDEPEND}"
 
