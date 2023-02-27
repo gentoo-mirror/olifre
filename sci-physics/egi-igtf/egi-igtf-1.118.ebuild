@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2028 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
@@ -8,7 +8,7 @@ HOMEPAGE="https://wiki.egi.eu/wiki/EGI_IGTF_Release"
 
 MY_PV="${PV}-1"
 
-# curl -s https://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttps://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.117/${PV}/'
+# curl -s https://repository.egi.eu/sw/production/cas/1/current/tgz/ | grep tar.gz | sed 's#^<a href="\([^"]*\)".*#\thttps://repository.egi.eu/sw/production/cas/1/current/tgz/\1#' | sed 's/1.118/${PV}/'
 SRC_URI="https://repository.egi.eu/sw/production/cas/1/ca-policy-egi-cam-${MY_PV}/tgz/igtf-preinstalled-bundle-classic.tar.gz -> igtf-preinstalled-bundle-classic-${MY_PV}.tar.gz
 	https://repository.egi.eu/sw/production/cas/1/ca-policy-egi-cam-${MY_PV}/tgz/igtf-preinstalled-bundle-iota.tar.gz -> igtf-preinstalled-bundle-iota-${MY_PV}.tar.gz
 	https://repository.egi.eu/sw/production/cas/1/ca-policy-egi-cam-${MY_PV}/tgz/igtf-preinstalled-bundle-mics.tar.gz -> igtf-preinstalled-bundle-mics-${MY_PV}.tar.gz
