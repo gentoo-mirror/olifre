@@ -4,7 +4,7 @@ dev-python/swampy 3.0.1: Swampy is a suite of Python programs that support the t
 media-gfx/textext 1.5.0: Re-editable LaTeX graphics for Inkscape
 net-vpn/eduvpn-client 3.0.0 9999: Linux client and Python client API for eduVPN
 sci-physics/egi-igtf 1.119: Trust anchors endorsed by EGI.eu
-sci-physics/rucio-client 1.29.4 9999: Rucio is the new version of ATLAS DDM system services.
+sci-physics/rucio-client 1.29.4 1.31.1 9999: Rucio is the new version of ATLAS DDM system services.
 sci-physics/voms 2.1.0_rc0: The VOMS native service and APIs
 sci-physics/voms-clients 3.3.2: Command-line clients for Virtual Organization Membership Service (VOMS)
 sci-physics/wlcg-voms 1.0.0 1.0.1 1.0.2 1.0.3: VOMS LSC files
