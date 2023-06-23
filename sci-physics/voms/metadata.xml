@@ -5,6 +5,10 @@
     <email>o.freyermuth@googlemail.com</email>
     <name>Oliver Freyermuth</name>
   </maintainer>
+  <upstream>
+    <bugs-to>https://github.com/italiangrid/voms/issues</bugs-to>
+    <remote-id type="github">italiangrid/voms</remote-id>
+  </upstream>
   <use>
     <flag name="clients">Install VOMS client components.</flag>
     <flag name="server">Install VOMS server component.</flag>
