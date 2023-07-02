@@ -1,6 +1,6 @@
 BDEPEND=doc? ( python_single_target_python3_10? ( dev-python/sphinx[python_targets_python3_10(-)] dev-python/sphinx-rtd-theme[python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/sphinx[python_targets_python3_11(-)] dev-python/sphinx-rtd-theme[python_targets_python3_11(-)] ) )
 DEFINED_PHASES=compile install setup
-DEPEND=media-gfx/inkscape virtual/latex-base gtk? ( x11-libs/gtk+:3[introspection] x11-libs/gtksourceview:3.0 python_single_target_python3_10? ( dev-python/pygobject[cairo,python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/pygobject[cairo,python_targets_python3_11(-)] ) ) python_single_target_python3_10? ( dev-python/lxml[python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/lxml[python_targets_python3_11(-)] ) python_single_target_python3_10? ( >=dev-lang/python-3.10.11:3.10[tk?] ) python_single_target_python3_11? ( >=dev-lang/python-3.11.3:3.11[tk?] )
+DEPEND=media-gfx/inkscape virtual/latex-base gtk? ( x11-libs/gtk+:3[introspection] x11-libs/gtksourceview:3.0 python_single_target_python3_10? ( dev-python/pygobject[cairo,python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/pygobject[cairo,python_targets_python3_11(-)] ) ) python_single_target_python3_10? ( dev-python/lxml[python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/lxml[python_targets_python3_11(-)] ) python_single_target_python3_10? ( >=dev-lang/python-3.10.12:3.10[tk?] ) python_single_target_python3_11? ( >=dev-lang/python-3.11.4:3.11[tk?] )
 DESCRIPTION=Re-editable LaTeX graphics for Inkscape
 EAPI=8
 HOMEPAGE=https://textext.github.io/textext/
@@ -8,9 +8,9 @@ INHERIT=python-single-r1
 IUSE=doc +gtk tk python_single_target_python3_10 python_single_target_python3_11
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD
-RDEPEND=media-gfx/inkscape virtual/latex-base gtk? ( x11-libs/gtk+:3[introspection] x11-libs/gtksourceview:3.0 python_single_target_python3_10? ( dev-python/pygobject[cairo,python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/pygobject[cairo,python_targets_python3_11(-)] ) ) python_single_target_python3_10? ( dev-python/lxml[python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/lxml[python_targets_python3_11(-)] ) python_single_target_python3_10? ( >=dev-lang/python-3.10.11:3.10[tk?] ) python_single_target_python3_11? ( >=dev-lang/python-3.11.3:3.11[tk?] )
+RDEPEND=media-gfx/inkscape virtual/latex-base gtk? ( x11-libs/gtk+:3[introspection] x11-libs/gtksourceview:3.0 python_single_target_python3_10? ( dev-python/pygobject[cairo,python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/pygobject[cairo,python_targets_python3_11(-)] ) ) python_single_target_python3_10? ( dev-python/lxml[python_targets_python3_10(-)] ) python_single_target_python3_11? ( dev-python/lxml[python_targets_python3_11(-)] ) python_single_target_python3_10? ( >=dev-lang/python-3.10.12:3.10[tk?] ) python_single_target_python3_11? ( >=dev-lang/python-3.11.4:3.11[tk?] )
 REQUIRED_USE=^^ ( python_single_target_python3_10 python_single_target_python3_11 )
 SLOT=0
 SRC_URI=https://github.com/textext/textext/archive/refs/tags/1.5.0.tar.gz -> textext-1.5.0.tar.gz
-_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	a34d5f83235297b76d71eaf8deb53768	python-single-r1	75118e916668a74c660a13b0ecb22562
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	python-utils-r1	a013e16d5d896b3d8be68dd2a0e846ea	python-single-r1	75118e916668a74c660a13b0ecb22562
 _md5_=bc5ac8de91be2fde5a14876afec83d64
