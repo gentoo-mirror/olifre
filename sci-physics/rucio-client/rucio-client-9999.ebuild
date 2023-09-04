@@ -32,7 +32,7 @@ IUSE=""
 RDEPEND="dev-python/argcomplete[${PYTHON_USEDEP}]
 	dev-python/dogpile-cache[${PYTHON_USEDEP}]
 	dev-python/jsonschema[${PYTHON_USEDEP}]
-	dev-python/pykerberos[${PYTHON_USEDEP}]
+	dev-python/kerberos[${PYTHON_USEDEP}]
 	dev-python/paramiko[${PYTHON_USEDEP}]
 	dev-python/urllib3[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]

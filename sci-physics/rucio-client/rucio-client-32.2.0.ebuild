@@ -1,10 +1,10 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8,9,10} )
+PYTHON_COMPAT=( python3_{9..11} )
 inherit distutils-r1
 
 DESCRIPTION="Rucio is the new version of ATLAS DDM system services."
@@ -32,7 +32,7 @@ IUSE=""
 RDEPEND="dev-python/argcomplete[${PYTHON_USEDEP}]
 	dev-python/dogpile-cache[${PYTHON_USEDEP}]
 	dev-python/jsonschema[${PYTHON_USEDEP}]
-	dev-python/pykerberos[${PYTHON_USEDEP}]
+	dev-python/kerberos[${PYTHON_USEDEP}]
 	dev-python/paramiko[${PYTHON_USEDEP}]
 	dev-python/urllib3[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
