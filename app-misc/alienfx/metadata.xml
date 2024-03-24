@@ -5,4 +5,8 @@
     <email>o.freyermuth@googlemail.com</email>
     <name>Oliver Freyermuth</name>
   </maintainer>
+  <upstream>
+    <bugs-to>https://github.com/olifre/alienfx/issues</bugs-to>
+    <remote-id type="github">olifre/alienfx</remote-id>
+  </upstream
 </pkgmetadata>

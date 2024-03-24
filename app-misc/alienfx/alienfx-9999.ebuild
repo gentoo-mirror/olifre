@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
@@ -16,7 +16,7 @@ IUSE=""
 
 RDEPEND="virtual/libusb:1"
 DEPEND="${RDEPEND}
-	dev-util/cmake"
+	dev-build/cmake"
 
 #multilib_src_install() {
 #	cmake_src_install
