@@ -8,7 +8,7 @@ inherit rpm
 RPM_VER=1.0.0-1
 WLCG_RPM_VER=1.1.0-1
 WLCG_IAM_RPM_VER=2.0.0-1
-WLCG_IAM_DEV_RPM_VER=1.0.0-1
+WLCG_IAM_DTEAM_RPM_VER=1.0.0-1
 
 DESCRIPTION="VOMS LSC files"
 HOMEPAGE="https://twiki.cern.ch/twiki/bin/view/LCG/VOMSLSCfileConfiguration"
@@ -27,7 +27,7 @@ SRC_URI="alice? (
 	)
 	dteam? (
 		https://linuxsoft.cern.ch/wlcg/el9/x86_64/wlcg-voms-dteam-${RPM_VER}.el9.noarch.rpm
-		https://linuxsoft.cern.ch/wlcg/el9/x86_64/wlcg-iam-lsc-dteam-${WLCG_IAM_DEV_RPM_VER}.el9.noarch.rpm
+		https://linuxsoft.cern.ch/wlcg/el9/x86_64/wlcg-iam-lsc-dteam-${WLCG_IAM_DTEAM_RPM_VER}.el9.noarch.rpm
 	)
 	lhcb? (
 		https://linuxsoft.cern.ch/wlcg/el9/x86_64/wlcg-voms-lhcb-${RPM_VER}.el9.noarch.rpm
@@ -35,7 +35,7 @@ SRC_URI="alice? (
 	)
 	ops? (
 		https://linuxsoft.cern.ch/wlcg/el9/x86_64/wlcg-voms-ops-${RPM_VER}.el9.noarch.rpm
-		https://linuxsoft.cern.ch/wlcg/el9/x86_64/wlcg-iam-lsc-ops-${WLCG_IAM_DEV_RPM_VER}.el9.noarch.rpm
+		https://linuxsoft.cern.ch/wlcg/el9/x86_64/wlcg-iam-lsc-ops-${WLCG_IAM_RPM_VER}.el9.noarch.rpm
 	)
 	wlcg? ( https://repo.cloud.cnaf.infn.it/repository/infn-vos/centos7/infn-vo-wlcg-${WLCG_RPM_VER}.el7.noarch.rpm )
 	"
