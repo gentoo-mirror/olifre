@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{9..12} )
 inherit distutils-r1
 
 DESCRIPTION="Rucio is the new version of ATLAS DDM system services."
@@ -25,7 +25,6 @@ fi
 
 LICENSE="Apache-2.0"
 SLOT="0"
-IUSE=""
 
 # dev-python/bz2file[${PYTHON_USEDEP}]
 # dev-python/python-swiftclient[${PYTHON_USEDEP}]
