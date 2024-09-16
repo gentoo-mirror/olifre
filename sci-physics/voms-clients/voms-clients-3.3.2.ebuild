@@ -17,7 +17,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE="doc"
 
 DEPEND=">=virtual/jdk-1.8:*
-	dev-java/commons-cli:1
+	dev-java/commons-cli
 	dev-java/commons-io:1"
 BDEPEND="dev-java/maven-bin"
 RDEPEND="${DEPEND}
