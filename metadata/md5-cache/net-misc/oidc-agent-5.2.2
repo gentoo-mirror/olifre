@@ -1,0 +1,16 @@
+BDEPEND=test? ( dev-libs/check )
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND=app-crypt/libsecret dev-libs/cJSON:= dev-libs/libsodium:= media-gfx/qrencode net-libs/libmicrohttpd:= net-libs/webkit-gtk:4.1= net-misc/curl elibc_musl? ( sys-libs/argp-standalone )
+DESCRIPTION=Agent and tools for managing OpenID Connect tokens on the command line
+EAPI=8
+HOMEPAGE=https://github.com/indigo-dc/oidc-agent
+INHERIT=tmpfiles xdg-utils
+IUSE=test
+KEYWORDS=~amd64 ~arm64 ~riscv
+LICENSE=MIT
+RDEPEND=app-crypt/libsecret dev-libs/cJSON:= dev-libs/libsodium:= media-gfx/qrencode net-libs/libmicrohttpd:= net-libs/webkit-gtk:4.1= net-misc/curl elibc_musl? ( sys-libs/argp-standalone ) virtual/tmpfiles
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://github.com/indigo-dc/oidc-agent/archive/v5.2.2.tar.gz -> oidc-agent-5.2.2.tar.gz
+_eclasses_=tmpfiles	abdfd90f8841c1cb4b94575d5d109952	xdg-utils	5465aed08f1dfc2a75f14cbea4272961
+_md5_=ddfdf2c251465021f24a8ab95dcdf554
