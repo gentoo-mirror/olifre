@@ -22,7 +22,7 @@ SLOT="0"
 IUSE="doc examples static-libs"
 
 DEPEND="${RDEPEND}
-	doc? ( app-doc/doxygen[dot] )"
+	doc? ( app-text/doxygen[dot] )"
 
 src_configure() {
 	local mycmakeargs=(
