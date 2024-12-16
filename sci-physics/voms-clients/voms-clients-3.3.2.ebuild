@@ -10,10 +10,11 @@ MY_PV=$(ver_rs 3 '-')
 DESCRIPTION="Command-line clients for Virtual Organization Membership Service (VOMS)"
 HOMEPAGE="https://italiangrid.github.io/voms/"
 SRC_URI="https://github.com/italiangrid/${PN}/archive/v${MY_PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 IUSE="doc"
 
 DEPEND=">=virtual/jdk-1.8:*
@@ -23,8 +24,6 @@ BDEPEND="dev-java/maven-bin"
 RDEPEND="${DEPEND}
 	sci-physics/egi-igtf
 	sci-physics/wlcg-voms"
-
-S="${WORKDIR}/${PN}-${MY_PV}"
 
 # Even though some of this stuff will not be used at runtime, it is all
 # required in order to satisfy the maven build system.
@@ -586,18 +585,18 @@ EMAVEN_VENDOR=(
 	"https://repo.maven.apache.org/maven2 org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.jar"
 )
 
-__set_vendor_uri() {
+set_vendor_uri() {
 	local lib
 	for lib in "${EMAVEN_VENDOR[@]}"; do
 		SRC_URI+=" ${lib%% *}/${lib##* }"
 	done
 }
 
-__set_vendor_uri
-unset -f __set_vendor_uri
+set_vendor_uri
+unset -f set_vendor_uri
 
 src_prepare() {
-	sed -e 's:</settings>:<localRepository>'${T}/m2'</localRepository></settings>:g' < \
+	sed -e 's:</settings>:<localRepository>'"${T}"/m2'</localRepository></settings>:g' < \
 		"${EPREFIX}/usr/share/$(readlink "${EPREFIX}/usr/bin/mvn" |
 		sed 's:mvn:maven-bin:')/conf/settings.xml" > "${S}"/settings.xml || \
 			die "failed to create settings.xml"
@@ -631,7 +630,9 @@ src_install() {
 	java-pkg_newjar "${T}"/m2/org/bouncycastle/bcpkix-jdk15on/1.58/bcpkix-jdk15on-1.58.jar bcpkix.jar
 	java-pkg_newjar "${T}"/m2/org/bouncycastle/bcprov-jdk15on/1.58/bcprov-jdk15on-1.58.jar bcprov.jar
 	for tool in init info destroy; do
-		java-pkg_dolauncher voms-proxy-${tool}3 --main org.italiangrid.voms.clients.VomsProxy${tool^} --java_args="-XX:+UseSerialGC -Xmx16m"
+		java-pkg_dolauncher voms-proxy-${tool}3 \
+			--main org.italiangrid.voms.clients.VomsProxy${tool^} \
+			--java_args="-XX:+UseSerialGC -Xmx16m"
 		#sed -i	-e "s/voms-proxy-${tool}/voms-proxy-${tool}3/g" \
 		#	-e "s/VOMS-PROXY-${tool^^}/VOMS-PROXY-${tool^^}3/g" man/voms-proxy-${tool}.1 \
 		#	man/voms-proxy-${tool}.1
